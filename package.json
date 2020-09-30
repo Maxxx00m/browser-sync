@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "browser sync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksym Mishchanshuk <maximilanus0404@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.4.2",
+    "fs-extra": "^9.0.1",
+    "log-timestamp": "^0.3.0",
+    "socket.io": "^2.3.0"
+  }
+}

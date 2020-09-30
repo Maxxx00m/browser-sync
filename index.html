@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul id="events"></ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+        integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+        crossorigin="anonymous"></script>
+<script>
+    const $events = document.getElementById('events');
+
+    const newItem = (content) => {
+        const item = document.createElement('li');
+        item.innerText = content;
+        return item;
+    };
+
+    const socket = io('http://127.0.0.1:5000');
+
+    socket.on('connect', () => {
+        $events.appendChild(newItem('connect'));
+    });
+
+    socket.on('refresh', () => {
+        $events.appendChild(newItem('refresh'));
+    });
+</script>
+</body>
+</html>

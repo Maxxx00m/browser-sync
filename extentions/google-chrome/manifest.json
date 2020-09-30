@@ -1,0 +1,6 @@
+{
+  "name": "Browser sync",
+  "version": "0.1",
+  "description": "Refresh page on browser if locations has sync server",
+  "manifest_version": 2
+}

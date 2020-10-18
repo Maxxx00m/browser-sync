@@ -1,0 +1,22 @@
+.container {
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group > input {
+    width: 100%;
+}
+
+#notifications {
+    width: 100%;
+}
+
+#save-configs {
+    margin-top: 4px;
+    text-align: center;
+    width: 100%;
+}

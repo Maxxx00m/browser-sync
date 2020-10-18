@@ -1,6 +1,18 @@
 {
-  "name": "Browser sync",
-  "version": "0.1",
-  "description": "Refresh page on browser if locations has sync server",
-  "manifest_version": 2
+    "name": "Browser sync",
+    "version": "0.1",
+    "description": "Refresh page on browser if locations has sync server",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
 }

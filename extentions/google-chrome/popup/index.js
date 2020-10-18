@@ -22,6 +22,9 @@ function code() {
             setTimeout(() => {
                 setNotificationText('')
             }, 4000);
+
+            chrome.runtime.sendMessage({action: "refresh-configuration"}, function (response) {
+            });
         });
     })
 

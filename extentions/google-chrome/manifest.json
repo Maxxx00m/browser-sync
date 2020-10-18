@@ -3,10 +3,12 @@
     "version": "0.1",
     "description": "Refresh page on browser if locations has sync server",
     "permissions": [
-        "storage"
+        "storage",
+        "tabs"
     ],
     "background": {
         "scripts": [
+            "socket.io.js",
             "background.js"
         ],
         "persistent": false
